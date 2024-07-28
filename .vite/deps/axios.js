@@ -1317,7 +1317,7 @@ function speedometer(samplesCount, min) {
   let firstSampleTS;
   min = min !== void 0 ? min : 1e3;
   return function push(chunkLength) {
-    const now = Date.now();
+    const now = .now();
     const startedAt = timestamps[tail];
     if (!firstSampleTS) {
       firstSampleTS = now;
